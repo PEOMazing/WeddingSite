@@ -1,21 +1,524 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mariah &amp; Gabe — June 12, 2027</title>
-  <meta http-equiv="refresh" content="0; url=https://www.mariahandgabe2027.com/">
-  <link rel="canonical" href="https://www.mariahandgabe2027.com/">
-  <script>window.location.replace("https://www.mariahandgabe2027.com/");</script>
-  <style>
-    body { font-family: Georgia, serif; display: flex; align-items: center;
-           justify-content: center; min-height: 100vh; margin: 0;
-           background: #faf7f2; color: #3d3a35; text-align: center; }
-    a { color: #a3785f; }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mariah &amp; Gabe | June 12, 2027 | Boulder, Colorado</title>
+<meta name="description" content="Join Mariah and Gabe for a wedding weekend in Boulder, Colorado, June 11–13, 2027.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23c9d3de'/%3E%3Ccircle cx='16' cy='16' r='4' fill='%233a3f47'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f4f3ee;
+  --bg-2:#ecebe5;
+  --ink:#2f3237;
+  --ink-soft:#696c72;
+  --line:#2f3237;
+  --rule:rgba(47,50,55,.22);
+  --serif:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.6;font-weight:400;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--ink);text-decoration:none}
+a:hover{opacity:.7}
+h1,h2,h3,h4{font-weight:400;margin:0;line-height:1.15}
+p{margin:0 0 1em}
+.caps{text-transform:uppercase;letter-spacing:.22em}
+.wrap{max-width:1100px;margin:0 auto;padding:0 28px;position:relative}
+.narrow{max-width:700px;margin:0 auto}
+.center{text-align:center}
+.btn{display:inline-block;font-family:var(--serif);font-size:14px;letter-spacing:.24em;text-transform:uppercase;padding:13px 30px;border:1px solid var(--ink);color:var(--ink);border-radius:0;background:transparent;transition:.2s}
+.btn:hover{background:var(--ink);color:var(--bg);opacity:1}
+.btn.solid{background:var(--ink);color:var(--bg)}
+.btn.solid:hover{background:#2a2e34}
+
+.divider{width:64px;border-top:3px double var(--rule);margin:0 auto 26px}
+
+/* ---------- password gate ---------- */
+#gate{position:fixed;inset:0;z-index:100;background:var(--bg);display:flex;align-items:center;justify-content:center;padding:24px;overflow:hidden}
+#gate.hidden{display:none}
+.gate-card{width:100%;max-width:420px;text-align:center;position:relative;z-index:1}
+.gate-card h1{font-size:clamp(30px,5vw,44px);letter-spacing:.18em;text-transform:uppercase;margin-bottom:12px}
+.gate-card .date{font-size:15px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:44px}
+.gate-card label{display:block;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:14px}
+.gate-card input{width:100%;font-family:var(--serif);font-size:20px;padding:12px 16px;border:1px solid var(--ink);border-radius:0;background:#fff;color:var(--ink);text-align:center;letter-spacing:.1em;outline:none}
+.gate-card button{margin-top:14px;width:100%;cursor:pointer}
+.gate-card .err{min-height:24px;font-size:16px;font-style:italic;color:#8a5563;margin-top:12px}
+.gate-card .help{font-size:16px;color:var(--ink-soft);margin-top:34px;font-style:italic}
+.gate-card .help a{border-bottom:1px solid var(--rule)}
+
+/* ---------- masthead (Abbey style) ---------- */
+.masthead{border-top:3px double var(--line);border-bottom:3px double var(--line);padding:30px 40px 0;text-align:center}
+.masthead .row{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px;max-width:1240px;margin:0 auto}
+.masthead .meta{font-size:15px;letter-spacing:.05em;color:var(--ink);line-height:1.4}
+.masthead .meta .sep{display:inline-block;width:26px}
+.masthead .meta.l{text-align:left}
+.masthead .meta.r{text-align:right;font-style:italic}
+.masthead h1{font-size:clamp(38px,5vw,66px);letter-spacing:.02em;font-weight:400;white-space:nowrap}
+nav.main{padding:30px 0 24px;text-align:center}
+nav.main ul{list-style:none;margin:0;padding:0;display:flex;justify-content:center;flex-wrap:wrap;gap:8px 32px}
+nav.main a{font-size:13px;letter-spacing:.2em;text-transform:uppercase;padding:2px 0;border-bottom:1px solid transparent}
+nav.main a.active{border-bottom-color:var(--ink)}
+nav.main a:hover{opacity:1;border-bottom-color:var(--rule)}
+@media (max-width:820px){
+  .masthead{padding:26px 20px 0}
+  .masthead .row{grid-template-columns:1fr;gap:10px}
+  .masthead h1{order:-1;white-space:normal;font-size:clamp(36px,9vw,54px)}
+  .masthead .meta.l,.masthead .meta.r{text-align:center}
+  nav.main{padding:22px 0 18px}nav.main ul{gap:6px 18px}nav.main a{font-size:12px;letter-spacing:.16em}
+}
+
+/* ---------- hero photo with overlay ---------- */
+.hero{position:relative}
+.hero img{width:100%;height:clamp(440px,80vh,840px);object-fit:cover;object-position:50% 22%}
+.hero .overlay{position:absolute;inset:0;display:flex;align-items:flex-start;justify-content:center;text-align:center;padding:clamp(36px,7vh,96px) 24px 0}
+.hero .overlay span{color:#fff;font-weight:300;text-transform:uppercase;letter-spacing:.18em;font-size:clamp(28px,4.8vw,64px);line-height:1.25;text-shadow:0 1px 18px rgba(0,0,0,.28)}
+@media (max-width:640px){.hero img{height:70vh;object-position:50% 30%}.hero .overlay{padding-top:28px}}
+
+.cta{text-align:center;padding:70px 24px 0}
+
+/* ---------- sections ---------- */
+.section{padding:120px 0 40px;position:relative}
+.section h2{font-size:clamp(26px,3.2vw,36px);letter-spacing:.22em;text-transform:uppercase;text-align:center;margin-bottom:18px}
+.section .sub{text-align:center;font-style:italic;font-size:21px;color:var(--ink-soft);max-width:640px;margin:0 auto 54px}
+.section p{font-size:19px;line-height:1.7}
+.rule{width:40px;height:1px;background:var(--ink);margin:28px auto;opacity:.6}
+
+/* weekend */
+.events{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:20px}
+.event{text-align:center;padding:10px 32px 30px;border-left:1px solid var(--rule)}
+.event:first-child{border-left:0}
+.event .day{font-size:14px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-soft)}
+.event .num{font-size:64px;line-height:1;margin:14px 0 4px;font-weight:300}
+.event .month{font-style:italic;font-size:19px;color:var(--ink-soft);margin-bottom:26px}
+.event h3{font-size:24px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+.event .time{font-size:17px;letter-spacing:.06em;margin-bottom:4px}
+.event .venue{font-size:17px;color:var(--ink-soft);line-height:1.55;margin-bottom:16px;font-style:italic}
+.event p{font-size:17px;color:var(--ink);margin-bottom:16px}
+.event .attire{font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft)}
+.event .attire b{font-weight:400;color:var(--ink);display:block;letter-spacing:.06em;text-transform:none;font-size:18px;font-style:italic;margin-top:4px}
+@media (max-width:900px){.events{grid-template-columns:1fr}.event{border-left:0;border-top:1px solid var(--rule);padding:44px 10px}.event:first-child{border-top:0;padding-top:10px}}
+.notes{max-width:720px;margin:56px auto 0;text-align:center;border-top:1px solid var(--rule);padding-top:44px}
+.notes p{font-size:18px;color:var(--ink);margin-bottom:.9em}
+.notes p b{font-weight:400;letter-spacing:.2em;text-transform:uppercase;font-size:13px;display:block;color:var(--ink-soft);margin-bottom:4px}
+
+/* photo blocks */
+.photo{padding:80px 0 0}
+.photo img{width:100%;object-fit:cover}
+.photo.wide img{aspect-ratio:16/10}
+.photo.tall{max-width:760px;margin:0 auto}
+.photo.tall img{aspect-ratio:3/4;object-position:50% 40%}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin:56px auto 0;max-width:900px}
+.trio figure{margin:0;text-align:center}
+.trio img{width:100%;aspect-ratio:1;object-fit:cover}
+.trio figcaption{font-style:italic;font-size:18px;color:var(--ink-soft);margin-top:10px}
+@media (max-width:640px){.trio{grid-template-columns:1fr;gap:30px}}
+
+/* story */
+.story-text{max-width:680px;margin:0 auto}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:640px;margin:10px auto 44px}
+.duo figure{margin:0;text-align:center}
+.duo img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 35%}
+.duo figcaption{font-style:italic;font-size:17px;color:var(--ink-soft);margin-top:10px}
+@media (max-width:480px){.duo{grid-template-columns:1fr;gap:26px;max-width:320px}}
+.story-text p{margin-bottom:1.35em}
+
+/* travel */
+.hotels{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:10px}
+.hotel{text-align:center}
+.hotel .tag{font-size:13px;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:12px}
+.hotel h3{font-size:26px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+.hotel .addr{font-style:italic;color:var(--ink-soft);margin-bottom:18px;font-size:18px}
+.hotel p{font-size:18px}
+.hotel .rate{font-size:18px;margin:16px 0 22px;line-height:1.8}
+.hotel .rate span{display:block;font-size:14px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft)}
+@media (max-width:800px){.hotels{grid-template-columns:1fr;gap:70px}}
+.airport{max-width:720px;margin:0 auto 70px;text-align:center}
+.airport h3{font-size:22px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:12px}
+.alt{max-width:640px;margin:70px auto 0;text-align:center}
+.alt h3{font-size:22px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:8px}
+.alt p{font-style:italic;color:var(--ink-soft);font-size:18px}
+.alt ul{list-style:none;padding:0;margin:20px 0 0}
+.alt li{display:flex;justify-content:space-between;gap:20px;padding:12px 0;border-bottom:1px solid var(--rule);font-size:18px}
+.alt li a{border-bottom:1px solid var(--rule)}
+.alt li span{color:var(--ink-soft);font-style:italic;white-space:nowrap}
+
+/* guide */
+.tabs{display:flex;justify-content:center;gap:34px;flex-wrap:wrap;margin:0 auto 50px}
+.tab{background:none;border:0;font-family:var(--serif);font-size:16px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);padding:6px 0;border-bottom:1px solid transparent;cursor:pointer}
+.tab.active{color:var(--ink);border-bottom-color:var(--ink)}
+.panel{display:none}
+.panel.active{display:block}
+.places{display:grid;grid-template-columns:1fr 1fr;gap:26px 60px;max-width:960px;margin:0 auto}
+.place h4{font-size:21px;letter-spacing:.06em;margin-bottom:4px}
+.place h4 a{border-bottom:1px solid var(--rule)}
+.place p{font-size:17px;color:var(--ink-soft);margin:0}
+.place .flag{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);display:block;margin-top:6px}
+@media (max-width:700px){.places{grid-template-columns:1fr}}
+.subhead{font-size:20px;letter-spacing:.22em;text-transform:uppercase;text-align:center;margin:60px 0 18px}
+.inline-list{text-align:center;max-width:820px;margin:0 auto;font-size:18px;line-height:2}
+.inline-list a{border-bottom:1px solid var(--rule)}
+.inline-list .sep{color:var(--ink-soft);margin:0 10px}
+
+/* gallery */
+.gallery-grid{columns:3;column-gap:18px;max-width:1000px;margin:0 auto}
+.gallery-grid figure{margin:0 0 18px;break-inside:avoid}
+.gallery-grid img{width:100%;height:auto;display:block}
+@media (max-width:820px){.gallery-grid{columns:2}}
+@media (max-width:480px){.gallery-grid{columns:1}}
+
+/* registry */
+.registry .registry-links{display:flex;flex-wrap:wrap;justify-content:center;gap:16px}
+.registry .soon{display:inline-block;font-size:14px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);padding:13px 28px;border:1px solid var(--rule)}
+
+/* footer */
+footer{position:relative;text-align:center;padding:90px 24px 110px;margin-top:100px;border-top:3px double var(--line)}
+footer .names{font-size:clamp(26px,4vw,40px);letter-spacing:.22em;text-transform:uppercase;margin-bottom:12px}
+footer .when{font-size:14px;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:30px}
+footer p{font-size:18px;max-width:520px;margin:0 auto 1em;font-style:italic;color:var(--ink-soft)}
+footer a{border-bottom:1px solid var(--rule)}
+</style>
 </head>
 <body>
-  <p>Our wedding site has moved —<br>
-     taking you to <a href="https://www.mariahandgabe2027.com/">MariahAndGabe2027.com</a>&hellip;</p>
+
+<div id="gate" role="dialog" aria-labelledby="gate-title">
+  <form class="gate-card" id="gate-form" autocomplete="off">
+    <h1 id="gate-title">Mariah &amp; Gabe</h1>
+    <div class="date">June 12, 2027 · Boulder, Colorado</div>
+    <label for="pw">Please enter the password from your invitation</label>
+    <input id="pw" type="password" autocapitalize="off" aria-describedby="gate-err">
+    <button class="btn solid" type="submit">Enter</button>
+    <div class="err" id="gate-err" aria-live="polite"></div>
+    <div class="help">Trouble getting in? Reach our wedding planners at <a href="mailto:hello@laurelandrose.com">hello@laurelandrose.com</a></div>
+  </form>
+</div>
+
+<header class="masthead" id="top">
+  <div class="row">
+    <div class="meta l">June 12, 2027<span class="sep"></span>Boulder, Colorado</div>
+    <h1>Mariah &amp; Gabe</h1>
+    <div class="meta r"><span id="countdown"></span></div>
+  </div>
+  <nav class="main" id="nav">
+    <ul>
+      <li><a href="#top" class="active">Home</a></li>
+      <li><a href="#weekend">The Weekend</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#travel">Travel</a></li>
+      <li><a href="#guide">Boulder Guide</a></li>
+      <li><a href="#registry">Registry</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/dsc_7667.jpg" alt="Mariah and Gabe on a bench by the river with mountains behind" fetchpriority="high">
+  <div class="overlay"><span>We're getting<br>married</span></div>
+</section>
+
+<section class="section" id="weekend">
+  <div class="wrap">
+    <div class="divider"></div>
+    <h2>The Weekend</h2>
+    <p class="sub">Three days in Boulder. Shuttle details and timing will be updated here as the weekend gets closer.</p>
+
+    <div class="events">
+      <div class="event">
+        <div class="day">Friday</div>
+        <div class="num">11</div>
+        <div class="month">June 2027</div>
+        <h3>Welcome Party</h3>
+        <div class="time">7:00 – 10:00 PM</div>
+        <div class="venue">VUE Boulder<br>1820 15th St, Suite 400, Boulder</div>
+        <p>Kick off the weekend with good views, light bites &amp; celebratory drinks!</p>
+        <div class="attire">Attire<b>Upscale Casual</b></div>
+      </div>
+      <div class="event">
+        <div class="day">Saturday</div>
+        <div class="num">12</div>
+        <div class="month">June 2027</div>
+        <h3>Ceremony &amp; Reception</h3>
+        <div class="time">4:00 – 10:00 PM</div>
+        <div class="venue">Burning Sky Farm<br>7723 Oxford Road, Longmont</div>
+        <p>Shuttles will depart from St. Julien and Moxy Boulder (more details to come) and will loop back to the hotels throughout the evening.</p>
+        <div class="attire">Attire<b>Garden Party</b></div>
+      </div>
+      <div class="event">
+        <div class="day">Sunday</div>
+        <div class="num">13</div>
+        <div class="month">June 2027</div>
+        <h3>Farewell Brunch</h3>
+        <div class="time">9:00 – 11:00 AM</div>
+        <div class="venue">St. Julien Hotel &amp; Spa, Lawn<br>900 Walnut St, Boulder</div>
+        <p>Stop by before you head out of town for a bite to eat and a goodbye hug. This event will take place outside on the lovely lawn!</p>
+        <div class="attire">Attire<b>Come as you are</b></div>
+      </div>
+    </div>
+
+    <div class="notes">
+      <p><b>Garden party attire</b>Midi dresses, floral prints, linen, and polished separates are welcome. For men, sport coats and ties are encouraged. Think polished and festive, but not overly formal.</p>
+      <p><b>Footwear</b>Kindly note that a portion of Saturday's celebration will be on natural terrain, so please plan footwear accordingly.</p>
+      <p><b>Evenings</b>Please bring a wrap or jacket. Colorado summer evenings do get cooler when the sun sets.</p>
+    </div>
+  </div>
+</section>
+
+<section class="photo tall">
+  <div class="wrap">
+    <img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/dsc_7866.jpg" alt="Mariah and Gabe with their horse at the ranch fence" loading="lazy">
+  </div>
+</section>
+
+<section class="section" id="story">
+  <div class="wrap">
+    <div class="divider"></div>
+    <h2>Our Story</h2>
+    <p class="sub">It started with a dog.</p>
+    <div class="story-text">
+      <p>Technically, Mariah met Tucker first. She was his dog trainer, Gabe was their HR consultant, and that was supposed to be the end of it. Conflict of interest and all. To this day, Tucker insists he planned the whole thing, because Mariah had always given him the best toys at daycare, and he decided she was a keeper long before Gabe caught on.</p>
+      <p>Gabe's opening move was texting Mariah pictures of Doodles up for adoption. When that failed, Bumble got involved. Mariah matched with Gabe half-convinced he was just another Doodle Bro, and Gabe made it his personal mission to prove her wrong. Our first date was at a bar called There (yes, we met There), and it was going well right up until the waitress started sending over free shots. Gabe, not wanting to be rude, accepted every single one. He went home fairly certain he'd blown it. Spoiler: he hadn't. Mariah was already a little smitten, though she'd never have admitted it.</p>
+      <p>Miraculously, she said yes to a second date. And a third. Before long, thanks to the Covid shutdown, "dates" looked less like dinner reservations and more like wandering the aisles of tile samples and cabinet finishes, picking out the details of Gabe's house in Denver. What Mariah didn't know was that Gabe was quietly letting her pick just about everything, so that when she eventually moved in, the house would already feel like hers. It had been her home long before she ever unpacked a box.</p>
+      <p>Then came Peanut, Frito paws and all, spending her days curled up with Gabe while Mariah was at work. Just like that, our little family had started.</p>
+      <p>A couple of years later, in Jamaica, Mariah found a cat that she fell in love with. After hours of researching how to bring the cat home, Gabe laid down the law: "We are not smuggling a cat out of this country. But if we find one at home, and it doesn't have anyone, we can keep it." The day we got back, it was raining. And there, in a bush, waiting for us like she'd read the fine print, was little Bug. Careful what you wish for.</p>
+      <p>Mariah went on to chase her dream of vet school. These days she's out saving the cats, dogs, goats, horses, and every other four-legged creature northern Colorado has to offer, while Gabe works from home selling PEO services and, in between calls, holds it down with the cooking, the cleaning, and the emotional support. It's a system, and it works, because every good love story needs someone who saves animals and someone who makes sure she's fed too.</p>
+      <p>Some things are just meant to be. It started with a dog, and now it's forever. On June 12, 2027, we're making it official. Tucker, Peanut, and Bug will be there in spirit, tails wagging. Well, two of the three tails. Bug doesn't wag, but she approves.</p>
+    </div>
+    <div class="trio">
+      <figure><img src="https://images.squarespace-cdn.com/content/v1/6a352a0e6f113b54b1f0e967/ce5f9c6e-53bc-4f25-8bf8-b2227b185a06/IMG_0377.jpeg?format=1000w" alt="Tucker" loading="lazy"><figcaption>Tucker</figcaption></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/peanut.jpg" alt="Peanut" loading="lazy"><figcaption>Peanut</figcaption></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/bug.jpg" alt="Bug" loading="lazy"><figcaption>Bug</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="photo tall">
+  <div class="wrap">
+    <img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/dsc_7710.jpg" alt="Mariah and Gabe on a ranch fence with mountains behind" loading="lazy">
+  </div>
+</section>
+
+<section class="section" id="travel">
+  <div class="wrap">
+    <div class="divider"></div>
+    <h2>Travel</h2>
+    <p class="sub">We've secured room blocks at two downtown Boulder hotels. Both are shuttle pick-up points for Saturday.</p>
+
+    <div class="airport">
+      <h3>Getting here</h3>
+      <p>For those of you flying from out of state, Denver International Airport (DIA) is the quickest airport to fly into. The airport is about a 45 minute drive from Boulder. Uber &amp; Lyft are easily accessible, or you can rent a car to explore the surrounding areas.</p>
+    </div>
+
+    <div class="hotels">
+      <div class="hotel">
+        <div class="tag">Wedding weekend hub</div>
+        <h3>St. Julien Hotel &amp; Spa</h3>
+        <div class="addr">900 Walnut St, Boulder</div>
+        <p>Located in the heart of Downtown Boulder, walking distance to restaurants &amp; shopping. Our room block is now full, but you can still book directly with the hotel.</p>
+        
+        <p>Call <a href="tel:+17204069696" style="border-bottom:1px solid var(--rule)">720-406-9696</a>, option #1, or book online.</p>
+        <a class="btn" href="https://be.synxis.com/?adult=1&arrive=2027-06-11&chain=10237&child=0&currency=USD&depart=2027-06-13&group=48093&hotel=27175&level=hotel&locale=en-US&productcurrency=USD&rooms=1" target="_blank" rel="noopener">Book St. Julien</a>
+      </div>
+      <div class="hotel">
+        <div class="tag">Room block</div>
+        <h3>Moxy Boulder</h3>
+        <div class="addr">1247 Pleasant St, Boulder</div>
+        <p>Moxy Boulder is located on University Hill, a short walk to Pearl Street. The hotel features a lively lobby bar (Bar Moxy), rooftop terrace, and easy access to downtown Boulder.</p>
+        <div class="rate">$249++ per night, single queen<span>Book by May 12</span></div>
+        <p>Discounted rate available through the link below.</p>
+        <a class="btn" href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1782853072607&key=GRP&app=resvlink" target="_blank" rel="noopener">Book Moxy Boulder</a>
+      </div>
+    </div>
+
+    <div class="alt">
+      <h3>Other options</h3>
+      <p>We do not have room blocks at these hotels, but they would be good options to consider.</p>
+      <ul>
+        <li><a href="https://www.marriott.com/en-us/hotels/denbo-boulder-marriott/overview/" target="_blank" rel="noopener">Boulder Marriott</a><span>from $340++</span></li>
+        <li><a href="https://www.boulderado.com/" target="_blank" rel="noopener">Hotel Boulderado</a><span>from $387++</span></li>
+        <li><a href="https://www.hyatt.com/hyatt-place/en-US/denzb-hyatt-place-boulder-pearl-street" target="_blank" rel="noopener">Hyatt Place Boulder</a><span>from $260++</span></li>
+        <li><a href="https://www.limelighthotels.com/boulder" target="_blank" rel="noopener">Limelight Boulder</a><span>from $349++</span></li>
+        <li><a href="https://www.thebradleyboulder.com/" target="_blank" rel="noopener">The Bradley Inn</a><span>2027 rates not yet published</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="guide">
+  <div class="wrap">
+    <div class="divider"></div>
+    <h2>Boulder Guide</h2>
+    <p class="sub">A few of our favorite places to eat, drink, and wander if you have some extra time in town.</p>
+
+    <div class="tabs" role="tablist">
+      <button class="tab active" role="tab" data-panel="dining">Dining</button>
+      <button class="tab" role="tab" data-panel="coffee">Coffee &amp; Sweets</button>
+      <button class="tab" role="tab" data-panel="activities">Activities</button>
+    </div>
+
+    <div class="panel active" id="dining">
+      <div class="places">
+        <div class="place"><h4><a href="https://www.pizzeriaalberico.com/" target="_blank" rel="noopener">Pizzeria Alberico</a></h4><p>The best pizza in Boulder, owned by the team behind Frasca. Casual, cozy, and always delicious.</p></div>
+        <div class="place"><h4><a href="https://www.oakatfourteenth.com/" target="_blank" rel="noopener">Oak</a></h4><p>A farm-to-table favorite in downtown Boulder; the kale salad and meatballs are divine.</p><span class="flag">Reservation recommended</span></div>
+        <div class="place"><h4><a href="https://www.santoboulder.com/" target="_blank" rel="noopener">Santo</a></h4><p>A family-favorite spot for flavorful New Mexican food. Must try their breakfast burrito!</p><span class="flag">Reservation recommended</span></div>
+        <div class="place"><h4><a href="https://www.frascafoodandwine.com/" target="_blank" rel="noopener">Frasca Food &amp; Wine</a></h4><p>Boulder's fine-dining gem, recently named the Best Restaurant in the United States by the James Beard Foundation. A true culinary experience.</p><span class="flag">Reservation required</span></div>
+        <div class="place"><h4><a href="https://www.jaxfishhouse.com/" target="_blank" rel="noopener">Jax Fish House</a></h4><p>Fresh seafood in the mountains, with oysters and creative cocktails.</p></div>
+        <div class="place"><h4><a href="https://www.skratchlabs.com/pages/skratch-labs-table" target="_blank" rel="noopener">Skratch</a></h4><p>Perfect for a healthy breakfast or lunch; their bowls are flavorful, fresh, and filling.</p></div>
+        <div class="place"><h4><a href="https://www.thekitchen.com/location/the-kitchen-bistros-boulder/" target="_blank" rel="noopener">The Kitchen</a></h4><p>A Boulder classic serving elevated American food in a stylish space.</p></div>
+        <div class="place"><h4><a href="https://www.stellascucina.com/" target="_blank" rel="noopener">Stella's Cucina</a></h4><p>A stylish modern Italian restaurant where art, design, and cuisine come together in an energetic, supper-club-style setting.</p></div>
+        <div class="place"><h4><a href="https://www.cozobifondafina.com/" target="_blank" rel="noopener">Cozobi Fonda Fina</a></h4><p>A vibrant Mexican eatery highlighting authentic flavors with a modern twist, known for its bold dishes and festive atmosphere.</p><span class="flag">Reservation required</span></div>
+        <div class="place"><h4><a href="https://flagstaffhouse.com/" target="_blank" rel="noopener">Flagstaff House</a></h4><p>A fine-dining landmark perched above Boulder, offering seasonal cuisine, an award-winning wine list, and sweeping views of the city and mountains.</p><span class="flag">Reservation required</span></div>
+        <div class="place"><h4><a href="https://www.steakhouse316.com/" target="_blank" rel="noopener">Steakhouse 316</a></h4><p>A trendy, old-school steakhouse with big personality and perfectly cooked steaks.</p></div>
+        <div class="place"><h4><a href="https://www.thesink.com/" target="_blank" rel="noopener">The Sink</a></h4><p>A funky, historic pizza and burger joint on University Hill. Fun for a casual bite.</p></div>
+        <div class="place"><h4><a href="https://www.barchetta.pizza/" target="_blank" rel="noopener">Barchetta</a></h4><p>Pizza and desserts in a casual setting, featuring a self-serve tap wall for beer and wine.</p></div>
+        <div class="place"><h4><a href="https://www.iamaflowerchild.com/locations/boulder-co/" target="_blank" rel="noopener">Flower Child</a></h4><p>A vibrant, health-focused eatery serving nourishing bowls, salads, and wraps with plenty of gluten-free, vegetarian, and vegan options.</p></div>
+        <div class="place"><h4><a href="https://www.chautauqua.com/dining/dining-hall/" target="_blank" rel="noopener">Chautauqua Dining Hall</a></h4><p>Great for brunch or lunch before or after a hike, with mountain views.</p></div>
+      </div>
+    </div>
+
+    <div class="panel" id="coffee">
+      <div class="places">
+        <div class="place"><h4><a href="https://www.spruceconfections.com/" target="_blank" rel="noopener">Spruce Confections</a></h4><p>Famous for scones. The hibiscus iced tea and spicy homemade chai are hidden gems.</p></div>
+        <div class="place"><h4><a href="https://www.belezacoffeebar.com/" target="_blank" rel="noopener">Beleza</a></h4><p>A chic, modern café and wine bar offering a thoughtful menu of seasonal bites and an elevated yet approachable atmosphere.</p></div>
+        <div class="place"><h4><a href="https://www.sutiandco.com/" target="_blank" rel="noopener">Süti &amp; Co.</a></h4><p>Scandinavian-style café with a focus on simple, wholesome dishes and warm community vibes.</p></div>
+        <div class="place"><h4><a href="https://avianocoffee.com/" target="_blank" rel="noopener">Aviano Coffee</a></h4><p>Located in the Moxy hotel, a sleek, modern coffee spot serving expertly crafted espresso drinks and specialty beverages.</p></div>
+        <div class="place"><h4><a href="https://drystorageco.com/" target="_blank" rel="noopener">Dry Storage</a></h4><p>A stylish bakery and café celebrated for artisanal breads, pastries, and sustainably sourced ingredients.</p></div>
+        <div class="place"><h4><a href="https://www.alpinemodern.com/" target="_blank" rel="noopener">Alpine Modern</a></h4><p>A design-forward café blending Scandinavian and mountain influences, serving specialty coffee, fresh pastries, and light bites.</p></div>
+        <div class="place"><h4><a href="https://www.tridentcafe.com/" target="_blank" rel="noopener">Trident Booksellers and Cafe</a></h4><p>A lively bookstore café serving coffee, breakfast, and brunch in a relaxed, eclectic setting.</p></div>
+        <div class="place"><h4><a href="https://www.maisonetteboulder.com/" target="_blank" rel="noopener">Maisonette French Bakery</a></h4><p>A charming French bakery and café serving pastries, coffee, and light meals.</p></div>
+        <div class="place"><h4><a href="https://www.thelaughinggoat.com/" target="_blank" rel="noopener">The Laughing Goat</a></h4><p>Lively local coffee shop with a strong brew and occasional live music.</p></div>
+        <div class="place"><h4><a href="https://ozocoffee.com/" target="_blank" rel="noopener">Ozo Coffee</a></h4><p>A Boulder staple for consistently excellent coffee.</p></div>
+        <div class="place"><h4><a href="https://www.boxcarcoffee.com/" target="_blank" rel="noopener">Boxcar Coffee</a></h4><p>Artisanal roasting and minimalist vibes right off Pearl Street. They have a great bakery as well.</p></div>
+        <div class="place"><h4><a href="https://www.wonderpressjuice.com/" target="_blank" rel="noopener">Wonder</a></h4><p>A Boulder staple for fresh juices, smoothies, and wellness drinks.</p></div>
+        <div class="place"><h4><a href="https://rushbowls.com/boulder" target="_blank" rel="noopener">Rush Bowls</a></h4><p>Famous for hearty smoothie bowls piled high with fruit and granola; a quick, healthy meal in a cup.</p></div>
+        <div class="place"><h4><a href="https://sunlifeorganics.com/" target="_blank" rel="noopener">SunLife Organics</a></h4><p>Organic, nutrient-dense smoothies, juices, açaí bowls, lattes, and wellness shots, all crafted with premium superfood ingredients.</p></div>
+        <div class="place"><h4><a href="https://sweetcow.com/" target="_blank" rel="noopener">Sweet Cow Ice Cream</a></h4><p>Maggie's favorite! Small-batch ice cream; the cookies-and-cream flavor is a must.</p></div>
+        <div class="place"><h4><a href="https://pieceloveandchocolate.com/" target="_blank" rel="noopener">Piece, Love &amp; Chocolate</a></h4><p>A decadent boutique offering handcrafted truffles, rich drinking chocolate, and artisanal confections.</p></div>
+        <div class="place"><h4><a href="https://www.luckysmarket.com/bakehouse" target="_blank" rel="noopener">Lucky's Bakehouse</a></h4><p>A cheerful neighborhood bakery known for scratch-made pastries, cakes, and breads, blending classic treats with inventive seasonal flavors.</p></div>
+      </div>
+    </div>
+
+    <div class="panel" id="activities">
+      <div class="places">
+        <div class="place"><h4>Boulder Farmers Market</h4><p>Saturdays. Local produce, food trucks, flowers, and live music in the heart of downtown.</p></div>
+        <div class="place"><h4>Chautauqua Park</h4><p>Iconic Boulder hiking trails with sweeping views of the Flatirons.</p></div>
+        <div class="place"><h4>Mount Sanitas Hike</h4><p>A bit more challenging, with a rewarding overlook of the city.</p></div>
+        <div class="place"><h4>Boulder Canyon</h4><p>Scenic and walkable from downtown, with rushing creeks and trails.</p></div>
+        <div class="place"><h4>Coot Lake</h4><p>Peaceful lake area with walking paths and mountain views, perfect for picnics.</p></div>
+        <div class="place"><h4>Celestial Seasonings Tea Factory Tour</h4><p>A quirky, only-in-Boulder experience.</p></div>
+        <div class="place"><h4><a href="https://www.boulderteahouse.com/" target="_blank" rel="noopener">Boulder Dushanbe Teahouse</a></h4><p>A beautifully hand-crafted teahouse gifted from Boulder's sister city in Tajikistan. Great for a casual meal or just tea.</p></div>
+        <div class="place"><h4>Red Rocks Amphitheatre</h4><p>World-famous open-air concert venue known for its natural acoustics and breathtaking views.</p></div>
+        <div class="place"><h4>Outdoor Activities</h4><p>Hiking, biking, fly fishing, and paddle boarding at Boulder Reservoir.</p></div>
+        <div class="place"><h4><a href="https://www.lagroove.com/" target="_blank" rel="noopener">LaGroove Pilates</a></h4><p>Lagree Fitness studio: a high-intensity, low-impact method influenced by Pilates but distinct in tempo and equipment.</p></div>
+        <div class="place"><h4><a href="https://curayogacenter.com/" target="_blank" rel="noopener">CURA Yoga Center</a></h4><p>Specializes in Kaiut Yoga, a biomechanic, therapeutic approach designed to improve joint mobility and soothe the nervous system.</p></div>
+        <div class="place"><h4>Explore nearby</h4><p>Lyons, Estes Park, the Peak to Peak Highway, and Rocky Mountain National Park (<a href="https://www.recreation.gov/timed-entry/10086910" target="_blank" rel="noopener" style="border-bottom:1px solid var(--rule)">timed-entry reservations required</a>).</p></div>
+      </div>
+      <h3 class="subhead">Favorite local trails</h3>
+      <div class="inline-list">Flatiron Trails near the Amphitheater<span class="sep">·</span><a href="https://bouldercolorado.gov/trailhead/gregory-canyon" target="_blank" rel="noopener">Gregory Canyon Trail</a><span class="sep">·</span><a href="https://bouldercolorado.gov/trail/mesa" target="_blank" rel="noopener">Mesa Trail</a><span class="sep">·</span><a href="https://bouldercolorado.gov/trailhead/boulder-valley-ranch" target="_blank" rel="noopener">Boulder Valley Ranch</a><span class="sep">·</span><a href="https://bouldercolorado.gov/trailhead/doudy-draw" target="_blank" rel="noopener">Doudy Draw</a><span class="sep">·</span><a href="https://bouldercolorado.gov/trailhead/flatirons-vista" target="_blank" rel="noopener">Flatirons Vista</a></div>
+      <h3 class="subhead">Shopping</h3>
+      <div class="inline-list">Cedar &amp; Hyde<span class="sep">·</span><a href="https://weekendsboulder.com/" target="_blank" rel="noopener">Weekends</a><span class="sep">·</span><a href="https://www.rebeccasherbs.com/" target="_blank" rel="noopener">Rebecca's Apothecary</a><span class="sep">·</span><a href="https://twohandspaperie.com/" target="_blank" rel="noopener">Two Hands Paperie</a><span class="sep">·</span><a href="https://libertypuzzles.com/" target="_blank" rel="noopener">Liberty Puzzles</a><span class="sep">·</span><a href="https://peppercorn.com/" target="_blank" rel="noopener">Peppercorn</a><span class="sep">·</span><a href="https://maxfashioncolorado.com/" target="_blank" rel="noopener">Max</a><span class="sep">·</span><a href="https://shopcanoeclub.com/" target="_blank" rel="noopener">Canoe Club</a><span class="sep">·</span>Outdoor stores galore</div>
+    </div>
+  </div>
+</section>
+
+<section class="photo wide">
+  <div class="wrap">
+    <img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/dsc_7650.jpg" alt="Mariah and Gabe forehead to forehead, showing the ring" loading="lazy">
+  </div>
+</section>
+
+<section class="photo tall">
+  <div class="wrap">
+    <img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/dsc_7955.jpg" alt="Mariah and Gabe at the fence under a big mountain sky" loading="lazy">
+  </div>
+</section>
+
+<section class="section registry" id="registry">
+  <div class="wrap center">
+    <div class="divider"></div>
+    <h2>Registry</h2>
+    <p class="sub" style="margin-bottom:34px">Many of you are traveling from afar to celebrate with us in Colorado, and your presence means the world to us. While your attendance is a gift in itself, if you'd like to contribute to our registry, please use the links below.</p>
+    <div class="registry-links">
+      <a class="btn" href="https://www.anthropologie.com/registry/listing?registryId=269BA4CB6E53" target="_blank" rel="noopener">Anthropologie</a>
+      <a class="btn" href="https://www.williams-sonoma.com/registry/wdkqv29d6m/registry-list.html" target="_blank" rel="noopener">Williams Sonoma</a>
+      <a class="btn" href="https://www.zola.com/registry/mariahandgabe2027" target="_blank" rel="noopener">Zola</a>
+      <a class="btn" href="https://www.crateandbarrel.com/gift-registry/mariah-dingus-and-gabe-revnew/r7627188" target="_blank" rel="noopener">Crate &amp; Barrel</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="gallery">
+  <div class="wrap">
+    <div class="divider"></div>
+    <h2>Gallery</h2>
+    <p class="sub">A few favorites from along the way.</p>
+    <div class="gallery-grid">
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/aspen.jpg" alt="Mariah lifted up in the air in the mountains" loading="lazy"></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/dsc_7667.jpg" alt="Mariah and Gabe on a bench by the river" loading="lazy"></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/hike.jpg" alt="Hiking selfie with mountains behind" loading="lazy"></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/mariah-tucker.jpg" alt="Mariah with Tucker at the training facility" loading="lazy"></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/paris.jpg" alt="Under the blossoms in Paris" loading="lazy"></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/dinner.jpg" alt="Mariah and Gabe at a dinner" loading="lazy"></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/dsc_7866.jpg" alt="With their horse at the ranch fence" loading="lazy"></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/tucker-wingman.jpg" alt="Tucker wearing a red bandana that says Wingman" loading="lazy"></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/coast.jpg" alt="Selfie on a foggy rocky coast" loading="lazy"></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/jamaica-us.jpg" alt="Mariah and Gabe in Jamaica" loading="lazy"></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/broncos.jpg" alt="On the field at Mile High" loading="lazy"></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/jamaica-cat2.jpg" alt="The cat Mariah fell for in Jamaica" loading="lazy"></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/cooking.jpg" alt="Mariah and Gabe at a cooking class" loading="lazy"></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/dsc_7710.jpg" alt="On a ranch fence with mountains behind" loading="lazy"></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/halloween.jpg" alt="Dressed up for Halloween" loading="lazy"></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/dsc_7650.jpg" alt="Forehead to forehead, showing the ring" loading="lazy"></figure>
+      <figure><img src="https://aj6nc7lhmvrsw2jo.public.blob.vercel-storage.com/dsc_7955.jpg" alt="At the fence under a big mountain sky" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="names">Mariah &amp; Gabe</div>
+  <div class="when">June 12, 2027 · Boulder, Colorado</div>
+  <p>Should you have any wedding related questions, please reach out to our wedding planners at <a href="mailto:hello@laurelandrose.com">hello@laurelandrose.com</a>.</p>
+</footer>
+
+<script>
+(function(){
+  var PASSWORD='peanut';
+  var gate=document.getElementById('gate'), form=document.getElementById('gate-form'), pw=document.getElementById('pw'), err=document.getElementById('gate-err');
+  function unlock(){gate.classList.add('hidden');document.body.style.overflow='';try{sessionStorage.setItem('mg-unlocked','1')}catch(e){}}
+  var already=false;try{already=sessionStorage.getItem('mg-unlocked')==='1'}catch(e){}
+  if(already){gate.classList.add('hidden')}else{document.body.style.overflow='hidden';setTimeout(function(){pw.focus()},50)}
+  form.addEventListener('submit',function(e){e.preventDefault();
+    if(pw.value.trim().toLowerCase()===PASSWORD){unlock()}else{err.textContent='That password doesn’t look right. Please check your invitation.';pw.select()}
+  });
+
+  var d=Math.ceil((new Date(2027,5,12)-new Date())/86400000);
+  document.getElementById('countdown').textContent=d>1?d+' days to go!':d===1?'Tomorrow!':d===0?'Today!':'Married!';
+
+  var links=Array.prototype.slice.call(document.querySelectorAll('nav.main a'));
+  var sections=links.map(function(a){var h=a.getAttribute('href');return h.charAt(0)==='#'?document.querySelector(h):null}).filter(Boolean);
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(entries){entries.forEach(function(en){if(en.isIntersecting){links.forEach(function(a){a.classList.toggle('active',a.getAttribute('href')==='#'+en.target.id)})}})},{rootMargin:'-30% 0px -60% 0px'});
+    sections.forEach(function(s){io.observe(s)});
+  }
+
+  var tabs=document.querySelectorAll('.tab'), panels=document.querySelectorAll('.panel');
+  Array.prototype.forEach.call(tabs,function(t){t.addEventListener('click',function(){
+    Array.prototype.forEach.call(tabs,function(x){x.classList.remove('active')});
+    Array.prototype.forEach.call(panels,function(p){p.classList.remove('active')});
+    t.classList.add('active');document.getElementById(t.getAttribute('data-panel')).classList.add('active');
+  })});
+})();
+</script>
+<script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+<script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
